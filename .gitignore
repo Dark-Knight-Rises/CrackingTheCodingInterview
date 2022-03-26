@@ -1,0 +1,4 @@
+*.pdf
+/.vscode
+/lib
+/bin
