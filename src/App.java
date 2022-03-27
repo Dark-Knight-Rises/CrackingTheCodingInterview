@@ -14,8 +14,14 @@ public class App {
         // Permutation obj = new Permutation();
         // System.out.println("The string: " + a + " and: " + b + " isPermute? " +
         // obj.isPermute(a, b));
-        PallindromePermutation obj = new PallindromePermutation();
-        System.out.println("THe string: " + a + " is a pallindrome permutation? " + obj.pp(a));
+        // PallindromePermutation obj = new PallindromePermutation();
+        // System.out.println("THe string: " + a + " is a pallindrome permutation? " +
+        // obj.pp(a));
+        // OneAway obj = new OneAway();
+        // System.out.println("The strings: " + a + " and : " + b + " are oneAway? " +
+        // obj.oneAway(a, b));
+        StringCompression obj = new StringCompression();
+        System.out.println("The string " + a + " 's compressed version is: " + obj.compresString(a));
         in.close();
     }
 }
