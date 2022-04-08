@@ -12,9 +12,33 @@
  */
 
 public class UrlLify {
-    public String url(String input) {
-        char[] chrInp = input.toCharArray();
+    public String url(String input, int trueLen) {
+        // char[] chrInp = input.toCharArray();
+        // int spaces = 0, ptr = trueLen - 1;
+        // count spaces
+        // for (int i = 0; i < input.length(); i++) {
+        // if (chrInp[i] == ' ') {
+        // spaces++;
+        // }
+        // }
+        // for (int i = trueLen - 1; i >= 0; i--) {
+        // if (chrInp[i] != ' ' && spaces >= 0) {
+        // chrInp[ptr--] = chrInp[i];
+        // spaces--;
+        // }
+        // }
+        // return chrInp.toString();
 
-        return chrInp.toString();
+        // by using string builder.
+        input = input.trim();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < input.length(); i++) {
+            if (input.charAt(i) == ' ') {
+                sb.append("%20");
+                continue;
+            }
+            sb.append(input.charAt(i));
+        }
+        return sb.toString();
     }
 }

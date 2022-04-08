@@ -9,8 +9,8 @@ public class App {
         Scanner in = new Scanner(System.in);
         System.out.println("enter string: ");
         String a = in.nextLine();
-        // System.out.println("enter 2nd string: ");
-        // String b = in.nextLine();
+        System.out.println("enter 2nd string: ");
+        String b = in.nextLine();
         // Permutation obj = new Permutation();
         // System.out.println("The string: " + a + " and: " + b + " isPermute? " +
         // obj.isPermute(a, b));
@@ -20,8 +20,14 @@ public class App {
         // OneAway obj = new OneAway();
         // System.out.println("The strings: " + a + " and : " + b + " are oneAway? " +
         // obj.oneAway(a, b));
-        StringCompression obj = new StringCompression();
-        System.out.println("The string " + a + " 's compressed version is: " + obj.compresString(a));
+        // StringCompression obj = new StringCompression();
+        // System.out.println("The string " + a + " 's compressed version is: " +
+        // obj.compresString(a));
+        // UrlLify obj = new UrlLify();
+        // System.out.println("Input: " + a);
+        // System.out.println("output: " + obj.url(a, a.length()));
+        StringRotation obj = new StringRotation();
+        System.out.println(obj.isRotation(a, b));
         in.close();
     }
 }
